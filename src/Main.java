@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-class RuneCalculator {
+class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
-    private static final int [] firstLevel = {0, 16, 17, 17, 17, 17, 18, 18, 18, 18, 18} ;
+    private static final int[] firstLevel = {0, 16, 17, 17, 17, 17, 18, 18, 18, 18, 18};
 
-    private static void main() {
+    public static void main(String[] args) {
         //Used formula: y = 0,02x^3 + 3,06x^2 + 105,6x - 895
 
         System.out.println("Welcome to RuneCalculator!");
@@ -18,15 +18,15 @@ class RuneCalculator {
         int finalLevel = scanner.nextInt();
 
         int result = 0;
-        if (startLevel < firstLevel.length){
+        if (startLevel < firstLevel.length) {
             result = 673;
-            if (finalLevel < firstLevel.length){
+            if (finalLevel < firstLevel.length) {
                 for (int i = startLevel; i < finalLevel; i++) {
                     result += firstLevel[i];
                 }
                 System.out.println("Rune cost: " + result);
                 return;
-            }else {
+            } else {
                 startLevel = 11;
                 result = 7496;
             }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Calcolo rune necessare EldenRing.iml" filepath="$PROJECT_DIR$/Calcolo rune necessare EldenRing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RuneCalculator.iml" filepath="$PROJECT_DIR$/RuneCalculator.iml" />
     </modules>
   </component>
 </project>
